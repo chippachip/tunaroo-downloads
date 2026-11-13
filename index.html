@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tunaroo TV player</title>
+<style>
+:root{--bg:#0d1315;--panel:#141c1f;--line:#27363b;--text:#e9efed;--muted:#93a7aa;--accent:#ffb23e;--ink:#1d1300}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:920px;margin:0 auto;padding:40px 20px 60px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:28px;letter-spacing:.08em}
+.brand i{width:14px;height:14px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:28px 0 10px;max-width:18ch}
+h2{font-size:20px;margin:36px 0 10px}
+p{margin:0 0 12px;max-width:65ch}
+.muted{color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin:22px 0 8px}
+.btn{display:inline-block;background:var(--accent);color:var(--ink);font-weight:700;text-decoration:none;padding:14px 22px;border-radius:8px;font-size:18px}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.addr{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:4px 8px;overflow-wrap:anywhere}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:26px 0 6px}
+.shots img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
+ul,ol{margin:0 0 12px;padding-left:22px;max-width:65ch}
+li{margin-bottom:6px}
+.note{border-left:3px solid var(--accent);background:var(--panel);padding:12px 16px;border-radius:0 8px 8px 0;margin:18px 0;max-width:65ch}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><i aria-hidden="true"></i>TUNAROO</div>
+  <h1>Your channels, in your order.</h1>
+  <p>Tunaroo is a TV player for Android TV boxes. It opens on your own lists of favourite channels, in the order you set, with a guide that follows the same order.</p>
+
+  <div class="cta">
+    <a class="btn" href="tunaroo.apk" download>Download Tunaroo for Android TV</a>
+    <span class="muted">Version 1.0, build 8 · 13 MB</span>
+  </div>
+  <p class="muted">On the box, a downloader app can fetch it directly from <span class="addr">stllritual.shop/tunaroo/tunaroo.apk</span></p>
+
+  <div class="note"><strong>Early test build.</strong> Tunaroo has been checked in an Android TV emulator. It is still being tested on real boxes, so expect rough edges.</div>
+
+  <div class="shots">
+    <img src="https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/watching.jpg" alt="Tunaroo showing a favourites list with what is on now for each channel" width="1280" height="720">
+    <img src="https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/guide.jpg" alt="Tunaroo guide grid showing the next three hours for a favourites list" width="1280" height="720">
+  </div>
+  <p class="muted">Screens from a test run with demo channels.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li><strong>Your own lists.</strong> Create lists such as Sport or Everyday and put the channels in any order.</li>
+    <li><strong>No double-ups.</strong> HD, FHD and backup copies of a channel appear once.</li>
+    <li><strong>Picks a working copy.</strong> If one copy of a channel fails, it moves to the next without asking.</li>
+    <li><strong>Guide.</strong> Now and next on every row, and a three-hour grid for each list.</li>
+    <li><strong>Remote only.</strong> Everything works from the direction pad, OK and Back.</li>
+  </ul>
+
+  <h2>What you need</h2>
+  <p>Tunaroo is a player only. It contains no channels and no content. You sign in with the details from your own TV provider: a provider login (Xtream) or an M3U playlist link, plus an optional guide link.</p>
+
+  <h2>Install</h2>
+  <ol>
+    <li>Download the file to the box, or copy it across on a USB stick.</li>
+    <li>Open the file. The first time, Android asks you to allow installs from that app. Allow it, then choose Install.</li>
+    <li>Open Tunaroo, enter your provider details, and add channels to your first list.</li>
+  </ol>
+
+  <footer>Tunaroo is a personal project. It does not provide, host or sell any channels or streams.</footer>
+</main>
+</body>
+</html>
