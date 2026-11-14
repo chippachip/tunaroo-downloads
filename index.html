@@ -5,33 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Tunaroo TV player</title>
+<link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/favicon.svg">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/icon-180.png">
+<meta property="og:title" content="Tunaroo TV player">
+<meta property="og:description" content="Your telly, your order. A TV player for Android TV boxes.">
+<meta property="og:image" content="https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/share.png">
+<meta name="theme-color" content="#0B1020">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0d1315;--panel:#141c1f;--line:#27363b;--text:#e9efed;--muted:#93a7aa;--accent:#ffb23e;--ink:#1d1300}
+:root{--night:#0B1020;--dusk:#161D33;--line:#2B3555;--sand:#F4EDE4;--mist:#9AA3BD;--ochre:#FFA21F;--orange:#FF6B35;--coral:#FF3D6E;--gum:#2ED3B7;--sunset:linear-gradient(135deg,#FFA21F 0%,#FF3D6E 100%)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body{margin:0;background:var(--night) radial-gradient(ellipse 70% 50% at 20% 0%,rgba(255,107,53,.16),transparent 70%) no-repeat;color:var(--sand);font:16px/1.6 "Inter",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 main{max-width:920px;margin:0 auto;padding:40px 20px 60px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:28px;letter-spacing:.08em}
-.brand i{width:14px;height:14px;border-radius:50%;background:var(--accent)}
-h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:28px 0 10px;max-width:18ch}
-h2{font-size:20px;margin:36px 0 10px}
+.logo{display:block;height:64px;width:auto}
+h1,h2,.btn{font-family:"Outfit","Inter",sans-serif}
+h1{font-size:clamp(32px,6vw,52px);font-weight:800;line-height:1.08;letter-spacing:-.01em;margin:36px 0 12px;max-width:16ch}
+h2{font-size:22px;font-weight:700;margin:40px 0 10px}
 p{margin:0 0 12px;max-width:65ch}
-.muted{color:var(--muted)}
-.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin:22px 0 8px}
-.btn{display:inline-block;background:var(--accent);color:var(--ink);font-weight:700;text-decoration:none;padding:14px 22px;border-radius:8px;font-size:18px}
-.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
-.addr{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:4px 8px;overflow-wrap:anywhere}
-.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:26px 0 6px}
-.shots img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
+.muted{color:var(--mist)}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin:24px 0 8px}
+.btn{display:inline-block;background:var(--sunset);color:#fff;font-weight:700;text-decoration:none;padding:15px 24px;border-radius:12px;font-size:18px;text-shadow:0 1px 2px rgba(120,20,0,.35)}
+.btn:hover{filter:brightness(1.06)}
+.btn:focus-visible{outline:4px solid var(--ochre);outline-offset:3px}
+.addr{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;background:var(--dusk);border:1px solid var(--line);border-radius:6px;padding:4px 8px;overflow-wrap:anywhere}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:28px 0 6px}
+.shots img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
 ul,ol{margin:0 0 12px;padding-left:22px;max-width:65ch}
 li{margin-bottom:6px}
-.note{border-left:3px solid var(--accent);background:var(--panel);padding:12px 16px;border-radius:0 8px 8px 0;margin:18px 0;max-width:65ch}
-footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+li::marker{color:var(--orange)}
+.note{border-left:3px solid var(--ochre);background:var(--dusk);padding:12px 16px;border-radius:0 12px 12px 0;margin:20px 0;max-width:65ch}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--mist);font-size:14px}
 </style>
+
 </head>
 <body>
 <main>
-  <div class="brand"><i aria-hidden="true"></i>TUNAROO</div>
-  <h1>Your channels, in your order.</h1>
+  <svg class="logo" role="img" aria-label="Tunaroo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1064 304"><defs><linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFA21F"/><stop offset="1" stop-color="#FF3D6E"/></linearGradient><linearGradient id="sunu" gradientUnits="userSpaceOnUse" x1="127" y1="77" x2="385" y2="435"><stop offset="0" stop-color="#FFA21F"/><stop offset="1" stop-color="#FF3D6E"/></linearGradient></defs><g transform="translate(0,0) scale(0.8)"><g transform="translate(-116,-66)"><path d="M170 246 C132 180 141 109 179 77 C213 113 219 175 209 246 Z M226 252 C219 180 251 117 299 101 C317 145 300 205 268 264 Z" fill="url(#sunu)" stroke="url(#sunu)" stroke-width="6" stroke-linejoin="round"/><path fill-rule="evenodd" d="M197.02 213.41 A22 22 0 0 0 165.00 233.00 L165.00 413.00 A22 22 0 0 0 197.02 432.59 L373.02 342.59 A22 22 0 0 0 373.02 303.41 Z M258 309 a15 15 0 1 0 -30 0 a15 15 0 1 0 30 0 Z" fill="url(#sunu)"/></g></g><path d="M275.96 262.0V109.97999999999999H314.24V262.0ZM252.2 186.32V154.42000000000002H338.0V186.32Z M398.5 264.42Q383.32 264.42 371.54999999999995 258.37Q359.78 252.32 353.07 241.43Q346.36 230.54 346.36 216.68V154.42000000000002H384.64V216.68Q384.64 221.07999999999998 386.4 224.38Q388.16 227.68 391.24 229.44Q394.32 231.2 398.5 231.2Q404.65999999999997 231.2 408.51 227.24Q412.36 223.28 412.36 216.68V154.42000000000002H450.64V216.68Q450.64 230.76 444.03999999999996 241.54Q437.44 252.32 425.66999999999996 258.37Q413.9 264.42 398.5 264.42Z M537.76 262.0V201.28Q537.76 193.8 533.36 189.51Q528.96 185.22 522.14 185.22Q517.52 185.22 513.89 187.2Q510.26 189.18 508.28 192.7Q506.3 196.22 506.3 201.28L491.34000000000003 194.24Q491.34000000000003 181.26 497.06000000000006 171.91Q502.78000000000003 162.56 512.79 157.39Q522.8 152.22 535.5600000000001 152.22Q547.22 152.22 556.35 157.61Q565.48 163.0 570.76 172.02Q576.04 181.04000000000002 576.04 192.48000000000002V262.0ZM468.02000000000004 262.0V154.42000000000002H506.3V262.0Z M638.96 264.2Q624.0 264.2 612.34 256.94Q600.6800000000001 249.68 594.08 237.03Q587.48 224.38 587.48 208.32Q587.48 192.04000000000002 594.08 179.28Q600.6800000000001 166.51999999999998 612.34 159.37Q624.0 152.22 638.96 152.22Q649.08 152.22 657.44 155.85000000000002Q665.8 159.48000000000002 671.19 166.08Q676.58 172.68 677.6800000000001 181.04000000000002V235.16Q676.58 243.74 671.19 250.23000000000002Q665.8 256.72 657.44 260.46000000000004Q649.08 264.2 638.96 264.2ZM647.1 230.1Q656.5600000000001 230.1 662.3900000000001 223.94Q668.22 217.78 668.22 208.1Q668.22 201.72 665.58 196.88Q662.94 192.04000000000002 658.21 189.18Q653.48 186.32 647.32 186.32Q641.16 186.32 636.4300000000001 189.18Q631.7 192.04000000000002 628.95 196.99Q626.2 201.94 626.2 208.1Q626.2 214.48 628.84 219.43Q631.48 224.38 636.3199999999999 227.24Q641.16 230.1 647.1 230.1ZM666.6800000000001 262.0V233.18L672.1800000000001 206.78L666.6800000000001 180.82V154.42000000000002H704.3V262.0Z" fill="#F4EDE4"/><path d="M724.54 262.0V154.42000000000002H762.8199999999999V262.0ZM762.8199999999999 203.48 745.66 188.95999999999998Q752.04 170.7 762.5999999999999 161.45999999999998Q773.16 152.22 790.0999999999999 152.22Q797.8 152.22 803.41 154.2Q809.02 156.18 812.9799999999999 160.36L790.76 190.06Q789.0 188.07999999999998 785.81 186.87Q782.6199999999999 185.66 778.66 185.66Q771.18 185.66 767.0 190.17000000000002Q762.8199999999999 194.68 762.8199999999999 203.48Z M875.02 264.42Q857.64 264.42 844.1099999999999 257.05Q830.5799999999999 249.68 822.66 236.81Q814.74 223.94 814.74 207.88Q814.74 191.82 822.55 179.17Q830.36 166.51999999999998 844.0 159.14999999999998Q857.64 151.78 874.8 151.78Q891.96 151.78 905.49 159.14999999999998Q919.02 166.51999999999998 926.94 179.17Q934.86 191.82 934.86 207.88Q934.86 223.94 927.05 236.81Q919.24 249.68 905.71 257.05Q892.18 264.42 875.02 264.42ZM874.8 230.32Q881.18 230.32 885.91 227.57Q890.64 224.82 893.28 219.76Q895.92 214.7 895.92 208.1Q895.92 201.5 893.17 196.55Q890.42 191.6 885.8 188.85Q881.18 186.1 874.8 186.1Q868.64 186.1 863.8 188.95999999999998Q858.9599999999999 191.82 856.3199999999999 196.76999999999998Q853.68 201.72 853.68 208.32Q853.68 214.7 856.3199999999999 219.76Q858.9599999999999 224.82 863.8 227.57Q868.64 230.32 874.8 230.32Z M1000.86 264.42Q983.48 264.42 969.95 257.05Q956.42 249.68 948.5 236.81Q940.58 223.94 940.58 207.88Q940.58 191.82 948.3900000000001 179.17Q956.2 166.51999999999998 969.84 159.14999999999998Q983.48 151.78 1000.64 151.78Q1017.8 151.78 1031.33 159.14999999999998Q1044.86 166.51999999999998 1052.78 179.17Q1060.7 191.82 1060.7 207.88Q1060.7 223.94 1052.8899999999999 236.81Q1045.08 249.68 1031.55 257.05Q1018.02 264.42 1000.86 264.42ZM1000.64 230.32Q1007.02 230.32 1011.75 227.57Q1016.48 224.82 1019.12 219.76Q1021.76 214.7 1021.76 208.1Q1021.76 201.5 1019.01 196.55Q1016.26 191.6 1011.64 188.85Q1007.02 186.1 1000.64 186.1Q994.48 186.1 989.64 188.95999999999998Q984.8 191.82 982.16 196.76999999999998Q979.52 201.72 979.52 208.32Q979.52 214.7 982.16 219.76Q984.8 224.82 989.64 227.57Q994.48 230.32 1000.64 230.32Z" fill="#FF6B35"/></svg>
+  <h1>Your telly, your order.</h1>
   <p>Tunaroo is a TV player for Android TV boxes. It opens on your own lists of favourite channels, in the order you set, with a guide that follows the same order.</p>
 
   <div class="cta">
