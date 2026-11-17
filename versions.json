@@ -1,0 +1,4 @@
+{
+  "mac": { "build": 23, "page": "https://tunaroo.com/download.html", "type": "tunaroo.com/get/mac" },
+  "android": { "build": 32, "page": "https://tunaroo.com/download.html", "type": "tunaroo.com/tunaroo.apk" }
+}
