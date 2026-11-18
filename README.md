@@ -1,6 +1,6 @@
 # Tunaroo downloads
 
-Install file and screenshots for the Tunaroo TV player for Android TV. No source code lives here.
+Install file and screenshots for the Tunaroo TV player for Android TV and Amazon Fire TV. No source code lives here.
 
 - `tunaroo.apk` is the latest build.
 - The download page is https://tunaroo.com/download.html, and tunaroo.com/tunaroo.apk points at this file.
