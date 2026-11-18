@@ -1,0 +1,24 @@
+# Tunaroo download links. To publish a new build, change the file names below.
+# Android points at tunaroo.apk in the downloads repo, which always holds the latest build, so a new
+# box build needs no change here. Mac uses the release page (file too big for the repo).
+Redirect 302 /get/android https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/tunaroo.apk
+Redirect 302 /get/mac https://github.com/chippachip/tunaroo-downloads/releases/latest/download/Tunaroo.app.zip
+Redirect 302 /tunaroo.apk https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/tunaroo.apk
+Redirect 302 /android https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/tunaroo.apk
+Redirect 302 /firestick https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/tunaroo.apk
+Redirect 302 /firetv https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/tunaroo.apk
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType image/svg+xml .svg
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(woff2|svg|png|jpg)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.pdf$">
+    Header set Content-Disposition "inline"
+  </FilesMatch>
+</IfModule>

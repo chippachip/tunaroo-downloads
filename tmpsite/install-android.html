@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Install Tunaroo on an Android TV box</title>
+<meta name="description" content="Step-by-step: install Tunaroo on an Android TV or Google TV box with the Downloader app or a USB stick.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<meta property="og:title" content="Install Tunaroo on an Android TV box">
+<meta property="og:description" content="Step-by-step: install Tunaroo on an Android TV or Google TV box with the Downloader app or a USB stick.">
+<meta property="og:image" content="https://tunaroo.com/img/share.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B1020">
+<link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.svg" alt="Tunaroo home" width="113" height="38"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+<a href="index.html">Home</a>
+<a href="download.html">Download</a>
+<a href="install-android.html" aria-current=page>Install on Android TV</a>
+<a href="install-mac.html">Install on Mac</a>
+<a href="getting-started.html">Getting started</a>
+<a href="help.html">Help</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><div class="wrap narrow">
+  <div class="print-only"><img class="print-logo" src="img/logo-light.svg" alt="Tunaroo"></div>
+  <h1>Install Tunaroo on an Android TV box</h1>
+  <p class="lede">About five minutes. You'll need the TV remote and, the first time, an internet connection on the box.</p>
+  <p class="no-print"><a class="pdf-link" href="guides/Tunaroo-Install-Android-TV.pdf"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 12v6M9 15l3 3 3-3"/></svg> Download this guide as a PDF</a></p>
+  <ul class="toc">
+    <li><a href="#downloader">Way 1: Downloader app</a></li>
+    <li><a href="#usb">Way 2: USB stick</a></li>
+    <li><a href="#first-open">First open</a></li>
+    <li><a href="#update">Updating</a></li>
+    <li><a href="#problems">If it won't install</a></li>
+  </ul>
+</div></section>
+
+<section class="wrap narrow">
+  <div class="note">
+    <p><strong>Why the extra steps?</strong> Tunaroo isn't in the Google Play Store yet, so Android asks you to allow the install once. That's normal for apps installed straight from a website.</p>
+  </div>
+
+  <p><strong>Got an Amazon Fire TV Stick?</strong> It has its own steps: <a href="install-firestick.html">Install on a Fire TV Stick</a>.</p>
+
+  <h2 id="downloader">Way 1: with the Downloader app (easiest)</h2>
+  <p>Downloader is a free app that fetches files from a web address, straight onto the box.</p>
+  <ol class="steps">
+    <li><h3>Get Downloader</h3><p>On the box, open the <strong>Google Play Store</strong> (or Apps), search for <strong>Downloader</strong> by AFTVnews and install it. Skip this if it's already on the box.</p></li>
+    <li><h3>Type the Tunaroo address</h3><p>Open Downloader. In the address box, type <span class="addr">tunaroo.com/tunaroo.apk</span> and press <strong>Go</strong>. The file downloads in a few seconds.</p></li>
+    <li><h3>Allow the install</h3><p>When the file has downloaded, Downloader offers to install it. The first time, Android says it can't install apps from this source. Choose <strong>Settings</strong>, switch on <strong>Allow from this source</strong> for Downloader, then press <strong>Back</strong>.</p>
+      <p class="muted small">On some boxes this setting lives in Settings › Apps › Security &amp; restrictions › Unknown sources, or Settings › Device Preferences › Security &amp; restrictions.</p></li>
+    <li><h3>Install</h3><p>Choose <strong>Install</strong>, then <strong>Open</strong> (or <strong>Done</strong> to open it later from the apps row). Downloader may offer to delete the file afterwards. Say yes, it isn't needed any more.</p></li>
+  </ol>
+
+  <h2 id="usb">Way 2: from a USB stick</h2>
+  <p>Handy if the box has no Downloader app, or you'd rather set it up from a computer.</p>
+  <ol class="steps">
+    <li><h3>Copy the file</h3><p>On a computer, download Tunaroo from <span class="addr">tunaroo.com/download.html</span> (the Android TV button) and copy the file <strong>tunaroo.apk</strong> onto a USB stick.</p></li>
+    <li><h3>Open it on the box</h3><p>Plug the stick into the box. Open a file manager app (many boxes have <strong>File Manager</strong> or <strong>Files</strong>; if yours doesn't, install <strong>File Commander</strong> or <strong>X-plore</strong> from the Play Store) and select the file.</p></li>
+    <li><h3>Allow and install</h3><p>Android asks you to allow installs from the file manager. Allow it, press <strong>Back</strong>, then choose <strong>Install</strong>.</p></li>
+  </ol>
+
+  <h2 id="first-open">First open</h2>
+  <p>Tunaroo appears in your apps row with the orange roo icon. To keep it handy, hold <strong>OK</strong> on it and choose to move it to the front, or add it to your favourites row.</p>
+  <p>When it opens, it asks for your TV provider's details. The <a href="getting-started.html">getting started guide</a> takes you through that and making your first list.</p>
+
+  <h2 id="update">Updating to a new version</h2>
+  <p>Tunaroo checks for a newer version once a day and offers <strong>Update now</strong>. The first time, the box asks you to allow Tunaroo to install apps: switch on <strong>Allow from this source</strong> for Tunaroo, press <strong>Back</strong> and choose Update now again. Your provider details and lists are kept.</p>
+  <p>You can also update by doing the same steps again with the new file. Android asks whether to install the update over the top: say yes.</p>
+
+  <h2 id="problems">If it won't install</h2>
+  <ul>
+    <li><strong>"App not installed"</strong>: make sure the download finished (the file should be about 11 MB). Delete it, download it again and retry. If it still fails, check the box has some free storage.</li>
+    <li><strong>"There was a problem parsing the package"</strong>: the box is older than Android 7. Tunaroo needs Android 7 or newer.</li>
+    <li><strong>No install button, or the setting keeps switching off</strong>: some boxes have a parental-control or "verify apps" setting that blocks installs. Look under Settings › Security.</li>
+    <li><strong>The address won't load in Downloader</strong>: check the spelling, and that the box is online (try opening any other app that uses the internet).</li>
+  </ul>
+  <p>Still stuck? <a href="help.html">See Help</a> or email <a href="mailto:admin@tunaroo.com">admin@tunaroo.com</a>.</p>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="wrap cols">
+    <div>
+      <img class="roo" src="img/roo.svg" alt="" width="34" height="34">
+      <p>Tunaroo is a TV player only. It does not provide, host or sell any channels or streams. You bring your own TV provider.</p>
+      <p class="small">© 2026 Tunaroo · Last updated 18 November 2026</p>
+    </div>
+    <div>
+      <h4>Get Tunaroo</h4>
+      <ul>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="install-android.html">Install on Android TV</a></li>
+        <li><a href="install-firestick.html">Install on Fire TV Stick</a></li>
+        <li><a href="install-mac.html">Install on Mac</a></li>
+        <li><a href="getting-started.html">Getting started</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="help.html">Help and questions</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="mailto:admin@tunaroo.com">admin@tunaroo.com</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

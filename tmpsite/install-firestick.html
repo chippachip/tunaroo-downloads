@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Install Tunaroo on an Amazon Fire TV Stick</title>
+<meta name="description" content="Step-by-step: install Tunaroo on an Amazon Fire TV Stick or Fire TV Cube with the Downloader app, and keep it up to date.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<meta property="og:title" content="Install Tunaroo on an Amazon Fire TV Stick">
+<meta property="og:description" content="Step-by-step: install Tunaroo on an Amazon Fire TV Stick or Fire TV Cube with the Downloader app, and keep it up to date.">
+<meta property="og:image" content="https://tunaroo.com/img/share.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B1020">
+<link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.svg" alt="Tunaroo home" width="113" height="38"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+<a href="index.html">Home</a>
+<a href="download.html">Download</a>
+<a href="install-android.html">Install on Android TV</a>
+<a href="install-mac.html">Install on Mac</a>
+<a href="getting-started.html">Getting started</a>
+<a href="help.html">Help</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><div class="wrap narrow">
+  <div class="print-only"><img class="print-logo" src="img/logo-light.svg" alt="Tunaroo"></div>
+  <h1>Install Tunaroo on an Amazon Fire TV Stick</h1>
+  <p class="lede">About five minutes. You'll need the Fire TV remote and an internet connection on the stick.</p>
+  <p class="no-print"><a class="pdf-link" href="guides/Tunaroo-Install-Fire-TV-Stick.pdf"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 12v6M9 15l3 3 3-3"/></svg> Download this guide as a PDF</a></p>
+  <ul class="toc">
+    <li><a href="#check">Check your stick</a></li>
+    <li><a href="#developer">Turn on Developer options</a></li>
+    <li><a href="#install">Install with Downloader</a></li>
+    <li><a href="#updates">Let Tunaroo update itself</a></li>
+    <li><a href="#remote">Using the Fire TV remote</a></li>
+    <li><a href="#problems">If it won't install</a></li>
+  </ul>
+</div></section>
+
+<section class="wrap narrow">
+  <div class="note">
+    <p><strong>Why the extra steps?</strong> Tunaroo isn't in the Amazon Appstore, so the Fire TV asks you to allow the install once. That's normal for apps installed straight from a website.</p>
+  </div>
+
+  <h2 id="check">1. Check your stick can run Tunaroo</h2>
+  <p>Most Fire TV Sticks, the Fire TV Cube and TVs with Fire TV built in can run Tunaroo. Two newer models can't, because they don't run Android underneath and only install apps from the Amazon Appstore:</p>
+  <ul>
+    <li><strong>Fire TV Stick 4K Select</strong> (2025)</li>
+    <li><strong>Fire TV Stick HD</strong> (2026)</li>
+  </ul>
+  <p>To check, go to <strong>Settings › My Fire TV › About</strong>. If the software version starts with <strong>Fire OS</strong>, you're good. If it starts with <strong>1.</strong> (Vega OS), Tunaroo won't install on that stick.</p>
+
+  <h2 id="developer">2. Turn on Developer options (once)</h2>
+  <ol class="steps">
+    <li><h3>Open About</h3><p>Go to <strong>Settings › My Fire TV › About</strong>.</p></li>
+    <li><h3>Press OK seven times</h3><p>With your stick's name highlighted at the top (for example <strong>Fire TV Stick 4K</strong>), press the <strong>OK</strong> (select) button seven times. A message says <strong>You are now a developer</strong>. If it says there's no need, Developer options are already on.</p></li>
+    <li><h3>Go back</h3><p>Press <strong>Back</strong>. <strong>Developer options</strong> now shows in the My Fire TV menu.</p></li>
+  </ol>
+
+  <h2 id="install">3. Install Tunaroo with the Downloader app</h2>
+  <ol class="steps">
+    <li><h3>Get Downloader</h3><p>From the Fire TV home screen, choose <strong>Find</strong> (the magnifying glass), search for <strong>Downloader</strong>, and install the orange app by AFTVnews. It's free.</p></li>
+    <li><h3>Allow Downloader to install apps</h3><p>Go to <strong>Settings › My Fire TV › Developer options › Install unknown apps</strong> and turn <strong>Downloader</strong> on.</p>
+      <p class="muted small">On older sticks this is a single setting called <strong>Apps from Unknown Sources</strong>. Turn it on.</p></li>
+    <li><h3>Type the Tunaroo address</h3><p>Open Downloader (allow it to use storage if it asks). In the address box, type <span class="addr">tunaroo.com/firestick</span> and press <strong>Go</strong>. The file downloads in a few seconds.</p></li>
+    <li><h3>Install</h3><p>Choose <strong>Install</strong>, then <strong>Open</strong>. Downloader may offer to delete the file afterwards. Say yes, it isn't needed any more.</p></li>
+  </ol>
+
+  <h2 id="updates">4. Let Tunaroo update itself (once)</h2>
+  <p>Tunaroo checks for a newer version once a day. When there is one, it offers <strong>Update now</strong>, downloads it and installs it over the top, keeping your login and lists. For that to work, the Fire TV has to allow Tunaroo itself to install apps:</p>
+  <ol class="steps">
+    <li><h3>Turn Tunaroo on</h3><p>Go to <strong>Settings › My Fire TV › Developer options › Install unknown apps</strong> and turn <strong>Tunaroo</strong> on.</p></li>
+    <li><h3>Update when asked</h3><p>When Tunaroo says a new version is ready, choose <strong>Update now</strong>, then <strong>Install</strong> on the Fire TV's screen. It takes about a minute.</p></li>
+  </ol>
+  <p>If Tunaroo forgets to ask, or you skipped this step, you can always update by opening Downloader and typing <span class="addr">tunaroo.com/firestick</span> again.</p>
+
+  <h2 id="remote">Using the Fire TV remote</h2>
+  <ul>
+    <li><strong>Up and down</strong> look through what's on the other channels. Press <strong>OK</strong> to watch one.</li>
+    <li><strong>Hold OK</strong>, or press the <strong>Menu</strong> button (three lines), to open the menu and Settings.</li>
+    <li><strong>Fast-forward and rewind</strong> (⏩ ⏪) go to the next and previous channel, because most Fire TV remotes have no channel buttons.</li>
+    <li>The remote's <strong>volume</strong> buttons usually control the TV directly, so they may not show Tunaroo's own volume glow.</li>
+  </ul>
+  <p>To find Tunaroo quickly, go to <strong>Apps</strong> (the three squares), highlight Tunaroo, press <strong>Menu</strong> and choose <strong>Move to front</strong>.</p>
+  <p>When it first opens, it asks for your TV provider's details. You can type them on your phone instead by scanning the QR code. The <a href="getting-started.html">getting started guide</a> takes you through it.</p>
+
+  <h2 id="problems">If it won't install</h2>
+  <ul>
+    <li><strong>Downloader isn't in the store, or there's no Developer options</strong>: check you don't have a Fire TV Stick 4K Select or the 2026 Fire TV Stick HD (see step 1).</li>
+    <li><strong>"App not installed"</strong>: make sure the download finished (about 11 MB). Delete it, download it again and retry. Check the stick has free storage under Settings › My Fire TV › About › Storage.</li>
+    <li><strong>"Install blocked" or no install button</strong>: Downloader isn't allowed to install apps yet. Repeat step 3.2.</li>
+    <li><strong>Update now says to allow updates first</strong>: do step 4, then choose Update now again.</li>
+    <li><strong>The address won't load</strong>: check the spelling and that the stick is online.</li>
+  </ul>
+  <p>Still stuck? <a href="help.html">See Help</a> or email <a href="mailto:admin@tunaroo.com">admin@tunaroo.com</a>.</p>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="wrap cols">
+    <div>
+      <img class="roo" src="img/roo.svg" alt="" width="34" height="34">
+      <p>Tunaroo is a TV player only. It does not provide, host or sell any channels or streams. You bring your own TV provider.</p>
+      <p class="small">© 2026 Tunaroo · Last updated 18 November 2026</p>
+    </div>
+    <div>
+      <h4>Get Tunaroo</h4>
+      <ul>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="install-android.html">Install on Android TV</a></li>
+        <li><a href="install-firestick.html">Install on Fire TV Stick</a></li>
+        <li><a href="install-mac.html">Install on Mac</a></li>
+        <li><a href="getting-started.html">Getting started</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="help.html">Help and questions</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="mailto:admin@tunaroo.com">admin@tunaroo.com</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
