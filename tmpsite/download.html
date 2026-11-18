@@ -60,7 +60,7 @@
       <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="16" rx="2"/><path d="M12 18v4M10 6h4"/></svg></div>
       <h2 style="margin-top:0">Amazon Fire TV Stick</h2>
       <ul class="facts">
-        <li><span>Version</span><span>Latest, same as Android TV</span></li>
+        <li><span>Version</span><span id="fire-version">Latest</span></li>
         <li><span>File</span><span>Install file (APK), 11 MB</span></li>
         <li><span>Works on</span><span>Fire TV Sticks, Fire TV Cube and Fire TV TVs running Fire OS. Not the Fire TV Stick 4K Select or the 2026 Fire TV Stick HD.</span></li>
         <li><span>Controls</span><span>Your Fire TV remote</span></li>
@@ -132,9 +132,9 @@
   </div>
 </footer>
 <script>
-// Shows the current Android build number, read from the list the apps check for updates.
+// Shows the current Android build number (the Fire TV Stick uses the same build), read from the list the apps check for updates.
 fetch('https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/versions.json',{cache:'no-store'})
-  .then(function(r){return r.json()}).then(function(v){document.getElementById('android-version').textContent='1.0.'+v.android.build}).catch(function(){});
+  .then(function(r){return r.json()}).then(function(v){var n='1.0.'+v.android.build;['android-version','fire-version'].forEach(function(id){document.getElementById(id).textContent=n})}).catch(function(){});
 </script>
 </body>
 </html>
