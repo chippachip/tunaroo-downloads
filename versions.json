@@ -1,4 +1,5 @@
 {
   "mac": {"build": 23, "page": "https://tunaroo.com/download.html", "type": "tunaroo.com/get/mac"},
-  "android": {"build": 53, "page": "https://tunaroo.com/download.html", "type": "tunaroo.com/tunaroo.apk"}
+  "android": {"build": 53, "page": "https://tunaroo.com/download.html", "type": "tunaroo.com/tunaroo.apk"},
+  "android-trial": {"build": 62, "page": "https://tunaroo.com/download.html", "type": "tunaroo.com/movies.apk", "apk": "https://raw.githubusercontent.com/chippachip/tunaroo-downloads/main/tunaroo-movies.apk"}
 }
